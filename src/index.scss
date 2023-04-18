@@ -1,0 +1,17 @@
+@import '../src/scss/abstract/variable';
+@import '../src/scss/abstract/fonts';
+@import '../src/scss/abstract/mixings';
+@import '../src/scss/abstract/extends';
+@import '../src/scss/base/base';
+@import '../src/scss/base/resets';
+
+:root {
+  /* colors brand*/
+  --black-0: #000000;
+  --gray: #646667;
+  --blue:#6DC9F7;
+  --pink:#F78691;
+
+  /*fonts*/
+  --m-plus: 'M PLUS 1p', sans-serif;
+}
