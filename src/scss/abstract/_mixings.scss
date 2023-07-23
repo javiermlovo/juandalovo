@@ -15,14 +15,24 @@
     align-items: center;
     justify-content: center;
     border: none;
+    border-radius: 3px;
     outline: none;
     cursor: pointer;
-    // padding: 0 2.5rem;
+    padding: 8px 24px;
+    font-family: $m-plus;
+    font-weight: 500;
+    font-size: .8125rem;
+    line-height: 1rem;
     position: relative;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
     text-decoration: none;
+    color: $black-01;
     &:focus {
         outline: none;
+    }
+    &:hover {
+        color: $white-f6;
+        background-color: $purple;
     }
     p {
         text-align: center;

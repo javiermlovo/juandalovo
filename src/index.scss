@@ -4,14 +4,19 @@
 @import '../src/scss/abstract/extends';
 @import '../src/scss/base/base';
 @import '../src/scss/base/resets';
+@import '../src/scss/components';
 
 :root {
   /* colors brand*/
-  --black-0: #000000;
+  --black-01: #010101;
+  --white:#ffffff;
+  --white-f6:#f6f6f6;
   --gray: #646667;
   --blue:#6DC9F7;
   --pink:#F78691;
+  --purple:#674f75;
 
   /*fonts*/
   --m-plus: 'M PLUS 1p', sans-serif;
+  --tenor: 'Tenor Sans', sans-serif;
 }

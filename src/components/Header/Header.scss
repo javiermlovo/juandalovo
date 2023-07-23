@@ -1,0 +1,35 @@
+@import '../../index.scss';
+.header{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: $white-f6;
+    &--logo{
+        max-width: 300px;
+    }
+    .darkMode-label {
+        width: 22px;
+    }
+    .nav-link{
+        font-weight: $semibold;
+    }
+    .dropdown-menu{
+        border-color: transparent;
+        border-radius: 0;background-color: $white-f6;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        padding: 0;
+        &[data-bs-popper]{
+            top: 55px;
+            margin-top: 0;
+        }
+        .dropdown-item {
+            font-weight: $medium;
+        }
+        .dropdown-item:focus, .dropdown-item:hover{
+            color: $white-f6;
+            background-color: $purple;
+        }
+    }
+    
+}
