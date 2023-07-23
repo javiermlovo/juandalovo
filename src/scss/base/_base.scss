@@ -10,12 +10,6 @@ code {
     font-family: $m-plus;
 }
 
-@media (prefers-color-scheme:dark) {
-    body{
-        background-color: greenyellow;
-    }
-}
-
 
 //Provicional mientras se determina todo lo que debe cambiar de color
 body.dark {
@@ -43,6 +37,9 @@ body.dark {
         .navbar-toggler-icon{
             background-image: url("data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27><path stroke=%27rgba%28255, 255, 255, 0.75%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/></svg>");
         }
-        
+        .navbar-collapse{
+            background-color: $black-01;
+        }
     }
 }
+

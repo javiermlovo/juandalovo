@@ -10,8 +10,19 @@
     .darkMode-label {
         width: 22px;
     }
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+        color: $purple;
+        text-decoration: underline;
+    }
     .nav-link{
         font-weight: $semibold;
+        &:hover{
+            color: $purple;
+            text-decoration: underline;
+        }
+    }
+    .navbar-toggler{
+        border-color: transparent;
     }
     .dropdown-menu{
         border-color: transparent;
@@ -31,5 +42,13 @@
             background-color: $purple;
         }
     }
-    
+    .navbar-collapse{
+        @media (max-width: $lg) {
+            position: absolute;
+            background: rgb(246, 246, 246);
+            left: 0px;
+            right: 0px;
+            top: 72px;
+        }
+    }
 }

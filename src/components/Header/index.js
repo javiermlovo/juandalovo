@@ -24,14 +24,14 @@ function Header() {
                 <Container fluid className="justify-content-center d-flex">
                     <Col xs="auto">
                         <Navbar.Brand href="/">
-                            <Image src={logo} alt="logo" width="300" className="header--logo"/>
+                            <Image src={logo} alt="logo" width="200" className="header--logo"/>
                         </Navbar.Brand>
                     </Col>
                     <Col className="d-flex justify-content-center">
                         <Navbar.Toggle className="ms-auto" aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="mx-auto">
-                                <Nav.Link className="px-3" href="/">Home</Nav.Link>
+                                <Nav.Link className="px-3 active" href="/">Home</Nav.Link>
                                 <Nav.Link className="px-3" href="/about">About</Nav.Link>
                                 <NavDropdown className="px-3" title="Work porfolio" id="basic-nav-dropdown">
                                     <NavDropdown.Item href="/porfolio/portrait">
