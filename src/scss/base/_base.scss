@@ -4,6 +4,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     // background-color: greenyellow;
+    background-color: $white-f6 !important;
 }
 
 code {
@@ -13,20 +14,30 @@ code {
 
 //Provicional mientras se determina todo lo que debe cambiar de color
 body.dark {
-    background-color: $black-01;
+    background-color: $black-01 !important;
     .darkMode-applicable {
         background-color: $black-01;
         p,a,svg {
             color: $white-f6;
         }
-        .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+        .navbar-nav 
+        .nav-link.active, 
+        .navbar-nav 
+        .nav-link.show{
             color: $white-f6;
         }
         .dropdown-item {
             background-color: $black-01;
         }
-        .header--logo{
+        .header--logo,.footer--logo{
             filter: invert(1);
+        }
+        .footer--social-media {
+            a,svg {
+                &:hover{
+                    color: $pink;
+                }
+            }
         }
         .dropdown-toggle::after{
             border-top: 0.3em solid $white-f6;
@@ -39,6 +50,9 @@ body.dark {
         }
         .navbar-collapse{
             background-color: $black-01;
+        }
+        .title {
+            color: $white;
         }
     }
 }

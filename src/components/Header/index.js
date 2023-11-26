@@ -3,13 +3,17 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import logo from '../../logo-juandalovo.webp'
+import logo from '../../images/logo-juandalovo.webp'
 import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col';
 import './Header.scss';
 
 
 function Header() {
+    const servidor = window.location.href
+    .toLocaleLowerCase()
+    .replace('http://','')
+    .replace('https://','')
     const [isDark, setIsDark] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches);
     useEffect(() => {
         if (isDark) {
@@ -23,7 +27,7 @@ function Header() {
             <Navbar expand="lg" className="py-3">
                 <Container fluid className="justify-content-center d-flex">
                     <Col xs="auto">
-                        <Navbar.Brand href="/">
+                        <Navbar.Brand href="/home">
                             <Image src={logo} alt="logo" width="200" className="header--logo"/>
                         </Navbar.Brand>
                     </Col>
@@ -31,23 +35,23 @@ function Header() {
                         <Navbar.Toggle className="ms-auto" aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="mx-auto">
-                                <Nav.Link className="px-3 active" href="/">Home</Nav.Link>
-                                <Nav.Link className="px-3" href="/about">About</Nav.Link>
-                                <NavDropdown className="px-3" title="Work porfolio" id="basic-nav-dropdown">
-                                    <NavDropdown.Item href="/porfolio/portrait">
+                                <Nav.Link className={`px-3 ${servidor.includes('home') ? 'active' : ''}`} href="/home">Home</Nav.Link>
+                                <Nav.Link className={`px-3 ${servidor.includes('about') ? 'active' : ''}`}  href="/about">About</Nav.Link>
+                                <NavDropdown title="Work porfolio" id="basic-nav-dropdown" className={`${servidor.includes('porfolio') ? 'active' : ''}`}>
+                                    <NavDropdown.Item href="/porfolio/portrait" className={`${servidor.includes('portrait') ? 'active' : ''}`}>
                                         Portrait
                                     </NavDropdown.Item>
-                                    <NavDropdown.Item href="/porfolio/product">
+                                    <NavDropdown.Item href="/porfolio/product" className={`${servidor.includes('product') ? 'active' : ''}`}>
                                         Product
                                     </NavDropdown.Item>
-                                    <NavDropdown.Item href="/porfolio/corporative">
+                                    <NavDropdown.Item href="/porfolio/corporative" className={`${servidor.includes('corporative') ? 'active' : ''}`}>
                                         Corporative
                                     </NavDropdown.Item>
-                                    <NavDropdown.Item href="/porfolio/architectural">
+                                    <NavDropdown.Item href="/porfolio/architectural" className={`${servidor.includes('architectural') ? 'active' : ''}`}>
                                         Architectural
                                     </NavDropdown.Item>
                                 </NavDropdown>
-                                <Nav.Link className="px-3" href="/contact">Contact</Nav.Link>
+                                <Nav.Link className={`px-3 ${servidor.includes('contact') ? 'active' : ''}`}  href="/contact">Contact</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Col>

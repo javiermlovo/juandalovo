@@ -21,6 +21,13 @@
             text-decoration: underline;
         }
     }
+    .nav-item {
+        &.active {
+            .nav-link{
+                text-decoration: underline;
+            }
+        }
+    }
     .navbar-toggler{
         border-color: transparent;
     }
@@ -36,6 +43,9 @@
         }
         .dropdown-item {
             font-weight: $medium;
+            &.active {
+                text-decoration: underline;
+            }
         }
         .dropdown-item:focus, .dropdown-item:hover{
             color: $white-f6;

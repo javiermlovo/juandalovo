@@ -1,0 +1,48 @@
+@import '../../index.scss';
+.footer{
+    background-color: $white-f6;
+    border-top: 1px solid $gray;
+    border-top-right-radius: 30%;
+    border-top-left-radius: 30%;
+    @media (max-width: $md) {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+    &--logo{
+        display: flex;
+        justify-content: center;
+        img {
+            max-width: 300px;
+            @media (max-width: $md) {
+                max-width: 250px;
+            }
+        }
+    }
+    &--social-media {
+        display: flex;
+        justify-content: space-around;
+        a {
+            color: $black-01;
+            font-size: 30px;
+            &:hover{
+                color: $purple;
+            }
+        }
+    }
+    &--nav{
+        ul {
+            list-style: none;
+            li {
+                a{
+                    font-weight: $semibold;
+                    text-decoration: none;
+                    color: $black-01;
+                    &:hover{
+                        color: $purple;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

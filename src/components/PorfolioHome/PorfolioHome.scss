@@ -1,0 +1,52 @@
+@import '../../index.scss';
+.PorfolioHome {
+    .PorfolioHome-card{
+        position: relative;
+        overflow: hidden;
+        &--info{
+            width: 100%;
+            padding: 0 16px;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: $white-f6;
+            text-decoration: none;
+            background-color: rgba(0,0,0,0);
+            .date{
+                text-transform: uppercase;
+                letter-spacing: .25em;
+            }
+            .title{
+                opacity: 0;
+                @media (max-width: $lg) {
+                    opacity: 1;
+                }
+            }
+            @media (max-width: $lg) {
+                background-color: rgba(0,0,0,0.5);
+            }
+        }
+        &--img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transition: scale 0.5s ease-in-out;
+        }
+        &:hover{
+            .PorfolioHome-card--img{
+                scale: 1.1;
+            }
+            .PorfolioHome-card--info{
+                background-color: rgba(0,0,0,0.5);
+                .title{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

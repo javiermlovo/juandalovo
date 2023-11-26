@@ -16,3 +16,38 @@
         padding: 13px .75em;
     }
 }
+
+.button-secondary {
+    @include btn ($gray);
+    color: $white;
+    &--small {
+        padding: .834em .75em;
+    }
+    &--large {
+        padding: 1.667em .75em;
+    }
+    &__disabled {
+        background-color: #E6E6E6;
+        // box-shadow: 0 0 0 2px inset #969696;
+        pointer-events: none;
+    }
+    &--input {
+        padding: 13px .75em;
+    }
+}
+
+//TEXTOS
+.title{
+    font-size: 3.15rem;
+    font-family: $tenor;
+    &--secondary{
+        font-size: 2.4rem;
+    }
+}
+
+.paragraph {
+    font-size: 1rem;
+    font-family: $m-plus;
+    text-align: justify;
+    margin: 0;
+}
