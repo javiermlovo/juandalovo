@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/juandalovo/static/css/main.4a822e96.css",
-    "main.js": "/juandalovo/static/js/main.bcee562e.js",
+    "main.css": "/juandalovo/static/css/main.640816fa.css",
+    "main.js": "/juandalovo/static/js/main.15623359.js",
     "static/js/787.3a056957.chunk.js": "/juandalovo/static/js/787.3a056957.chunk.js",
+    "static/media/aji-2.jpg": "/juandalovo/static/media/aji-2.d4e27d71426ec84ce5ff.jpg",
+    "static/media/dj-forest-3.jpg": "/juandalovo/static/media/dj-forest-3.980bffa4b7d93762cc99.jpg",
+    "static/media/profile.jpg": "/juandalovo/static/media/profile.1d4d30ee194fba5db3d2.jpg",
+    "static/media/santalaia.jpeg": "/juandalovo/static/media/santalaia.a1ef5701f8a1ce5aba2c.jpeg",
+    "static/media/rustiko2.jpg": "/juandalovo/static/media/rustiko2.9f81adec76409f1f0a16.jpg",
+    "static/media/whatsapp-logo.png": "/juandalovo/static/media/whatsapp-logo.965d92ce0d9f486938b6.png",
     "static/media/logo-juandalovo.webp": "/juandalovo/static/media/logo-juandalovo.1c291cd0b590da75fd5b.webp",
     "index.html": "/juandalovo/index.html",
-    "main.4a822e96.css.map": "/juandalovo/static/css/main.4a822e96.css.map",
-    "main.bcee562e.js.map": "/juandalovo/static/js/main.bcee562e.js.map",
+    "main.640816fa.css.map": "/juandalovo/static/css/main.640816fa.css.map",
+    "main.15623359.js.map": "/juandalovo/static/js/main.15623359.js.map",
     "787.3a056957.chunk.js.map": "/juandalovo/static/js/787.3a056957.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a822e96.css",
-    "static/js/main.bcee562e.js"
+    "static/css/main.640816fa.css",
+    "static/js/main.15623359.js"
   ]
 }

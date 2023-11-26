@@ -1,0 +1,45 @@
+{
+    "languages": [
+        {
+            "spanish":[
+                {
+                    "header":[
+                        {
+                            "logo": "",
+                            "links":[
+                                {
+                                    "name":"Inicio",
+                                    "link":"/",
+                                    "multiLink":false,
+                                    "links":[]
+                                },
+                                {
+                                    "name":"Sobre mi",
+                                    "link":"/aboutUs",
+                                    "multiLink":false,
+                                    "links":[]
+                                },
+                                {
+                                    "name":"Portafolio",
+                                    "link":"/",
+                                    "multiLink":true,
+                                    "links":[
+                                        
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                    
+                },
+                {
+                    "footer":[
+                        {
+                            
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
